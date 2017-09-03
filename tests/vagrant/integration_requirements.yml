@@ -1,0 +1,4 @@
+---
+
+- name: rofrantz.letsencrypt
+  version: origin/master

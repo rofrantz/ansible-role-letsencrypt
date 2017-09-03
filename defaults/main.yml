@@ -1,0 +1,6 @@
+---
+# defaults file
+letsencrypt_domains: []
+
+letsencrypt_autorenew_hour: 1
+letsencrypt_autorenew_minute: 0

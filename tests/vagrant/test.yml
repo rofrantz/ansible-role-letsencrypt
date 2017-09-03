@@ -1,0 +1,24 @@
+---
+
+- name: Test letsencrypt role
+  hosts: "{{hosts_group|default('all')}}"
+
+  vars:
+    letsencrypt_domains: [www.test-domain.com]
+
+    letsencrypt_autorenew_hour: 1
+    letsencrypt_autorenew_minute: 0
+
+  roles:
+    - role: rofrantz.letsencrypt
+      tags:
+        - build
+        - letsencrypt
+
+  post_tasks:
+    - name: "Check if cron is running"
+      service:
+        state: started
+        name: cron
+      tags:
+        - assert

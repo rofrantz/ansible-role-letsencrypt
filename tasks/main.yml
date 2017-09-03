@@ -1,0 +1,16 @@
+---
+# tasks file for role
+
+- name: Install require packages
+  include: ubuntu_packages.yml
+  when: ansible_distribution == "Ubuntu"
+
+# Creates a cron file under /etc/cron.d
+- cron:
+    name: letencrypt autoupdate
+    minute: "{{ letsencrypt_autorenew_minute }}"
+    hour: "{{ letsencrypt_autorenew_hour }}"
+    user: root
+    job: "certbot renew"
+    cron_file: letsencrypt-updater
+  notify: reload cron service
