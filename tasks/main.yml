@@ -7,7 +7,7 @@
 
 # Creates a cron file under /etc/cron.d
 - cron:
-    name: letencrypt autoupdate
+    name: letsencrypt autoupdate
     minute: "{{ letsencrypt_autorenew_minute }}"
     hour: "{{ letsencrypt_autorenew_hour }}"
     user: root
