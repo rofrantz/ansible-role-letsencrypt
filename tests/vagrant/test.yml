@@ -4,8 +4,6 @@
   hosts: "{{hosts_group|default('all')}}"
 
   vars:
-    letsencrypt_domains: [www.test-domain.com]
-
     letsencrypt_autorenew_hour: 1
     letsencrypt_autorenew_minute: 0
 

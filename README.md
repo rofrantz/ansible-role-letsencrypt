@@ -24,7 +24,6 @@ Role Variables
 Available variables are listed below, along with default values (see `defaults/main.yml`):
 
     # defaults file for Let's Encrypt
-    letsencrypt_domains: your-domain.com
     letsencrypt_autorenew_hour: 1
     letsencrypt_autorenew_minute: 0
     
