@@ -1,6 +1,6 @@
 Let's Encrypt w/Ansible 
 =========
-[![Ansible Role](https://img.shields.io/ansible/role/16391.svg)](https://galaxy.ansible.com/rofrantz/letsencrypt/)
+[![Ansible Role](https://img.shields.io/ansible/role/20200.svg)](https://galaxy.ansible.com/rofrantz/letsencrypt/)
 [![Build Status](https://travis-ci.org/rofrantz/ansible-role-letsencrypt.svg?branch=master)](https://travis-ci.org/rofrantz/ansible-role-letsencrypt)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://galaxy.ansible.com/rofrantz/letsencrypt/)
 
